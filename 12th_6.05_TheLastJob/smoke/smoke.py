@@ -22,7 +22,7 @@ class SimpleAndroidTests(unittest.TestCase):
         desired_caps['unicodekeyboard'] = 'ture' #appium启动过程安装官方的输入法
         desired_caps['resetkeyboard'] = 'ture' #用例运行完后把输入法切换原来输入法
         desired_caps['app'] = PATH(
-            '../helloWord/bin/helloword.apk'
+            '../../../../project/workspace/12th_6.05_TheLastJob/helloWord/bin/helloword.apk'
         )
 
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
